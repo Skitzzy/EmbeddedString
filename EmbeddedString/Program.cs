@@ -9,8 +9,8 @@ namespace EmbeddedString
         static void Main(string[] args)
         {
             List<string> wordList = new List<string>();
-
-            using (StreamReader sr = new StreamReader(@"C:\Users\Mahiyan\Desktop\wordlist.txt"))
+            #Enter filepath here
+            using (StreamReader sr = new StreamReader(source))
             {
                 while (sr.Peek() >= 0)
                 {
